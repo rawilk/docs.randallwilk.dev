@@ -22,4 +22,14 @@ return [
          */
         'github_access_token' => env('GITHUB_ACCESS_TOKEN'),
     ],
+
+    /*
+     * Directory where packages are being stored locally.
+     */
+    'packages_directory' => env('PACKAGES_DIRECTORY'),
+
+    /*
+     * Directory in packages where doc files live.
+     */
+    'default_package_docs_directory' => 'docs',
 ];
