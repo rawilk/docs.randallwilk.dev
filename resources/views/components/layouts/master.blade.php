@@ -52,7 +52,7 @@
                        title="{{ config('app.name') }} home"
                        class="text-white hover:text-white text-3xl font-bold"
                     >
-                        {{ config('app.name') }}
+                        {{ $title ?? config('app.name') }}
                     </a>
                     <span class="hidden md:block text-white">Documentation for my packages</span>
                 </div>
