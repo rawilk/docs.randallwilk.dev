@@ -32,4 +32,6 @@ return [
      * Directory in packages where doc files live.
      */
     'default_package_docs_directory' => 'docs',
+
+    'google_analytics_id' => env('GOOGLE_ANALYTICS_ID'),
 ];
