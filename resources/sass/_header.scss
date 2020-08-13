@@ -1,0 +1,5 @@
+.header {
+    @apply relative flex justify-between items-center h-40 py-4 px-6;
+
+    background-color: $header-bg;
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "name": "laravel-printing",
+        "description": "Direct printing for Laravel apps",
+        "repository": "rawilk/laravel-printing",
+        "branches": {
+            "master": "v1"
+        },
+        "category": "Laravel"
+    }
+]

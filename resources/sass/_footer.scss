@@ -1,0 +1,16 @@
+footer {
+    @apply py-16 text-center;
+    color: darken($header-bg, 10%);
+
+    background-color: lighten($header-bg, 10%);
+
+    > ul {
+        @apply p-3 rounded;
+
+        background-color: rgba(lighten($header-bg, 5%), .8);
+
+        a, a:hover, a:focus {
+            color: darken($header-bg, 10%);
+        }
+    }
+}
