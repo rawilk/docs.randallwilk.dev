@@ -1,5 +1,14 @@
 [
     {
+        "name": "laravel-app-key-rotator",
+        "description": "Rotate app keys around while re-encrypting data",
+        "repository": "rawilk/laravel-app-key-rotator",
+        "branches": {
+            "master": "v1"
+        },
+        "category": "Laravel"
+    },
+    {
         "name": "laravel-printing",
         "description": "Direct printing for Laravel apps",
         "repository": "rawilk/laravel-printing",
