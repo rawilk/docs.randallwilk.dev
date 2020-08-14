@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-    @apply leading-tight mb-4 mt-8 text-blue-900 font-display;
+    @apply leading-tight mb-4 mt-8 text-blue-900 font-display relative;
 
     &:first-child {
         @apply mt-0;
@@ -137,6 +137,30 @@ table {
 
     td {
         @apply p-2 border-t text-sm bg-gray-100 border-gray-400;
+    }
+}
+
+.content {
+    @apply pl-6;
+}
+
+.anchor-link {
+    border: none !important;
+    @apply text-blue-600;
+    display: block;
+    font-size: .75em;
+    font-weight: 400;
+    height: 1em;
+    position: absolute;
+    right: 100%;
+    top: .2em;
+    width: 1em;
+    text-align: right;
+    padding-right: .25em;
+    text-decoration: none !important;
+
+    &:before {
+        content: '#';
     }
 }
 /* purgecss end ignore */

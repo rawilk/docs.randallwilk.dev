@@ -2,12 +2,12 @@
 
 namespace App\Models;
 
+use App\Support\ContentTransformer;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
-use Michelf\MarkdownExtra;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use TitasGailius\Terminal\Terminal;
@@ -144,10 +144,8 @@ class Repository extends Model
             $content = preg_replace(static::CONTENT_META_PATTERN, '', $content);
         }
 
-        $content = MarkdownExtra::defaultTransform($content);
-
         return [
-            'content' => $content,
+            'content' => ContentTransformer::transform($content),
             'title' => $meta['title'] ?? $this->name,
         ];
     }
