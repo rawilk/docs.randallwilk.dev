@@ -61,6 +61,10 @@ class ExportDocs extends Command
             );
         }
 
+        if ($this->option('target') && $this->ask('Delete files in temporary folder? [y/n]', 'y') === 'y') {
+            File::deleteDirectory(dirname($this->exportDir()));
+        }
+
         $this->info('Export finished.');
     }
 
