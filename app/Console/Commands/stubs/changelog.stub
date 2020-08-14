@@ -1,0 +1,6 @@
+---
+title: Changelog
+sort: 5
+---
+
+All notable changes for {{ NAME }} are documented [on Github](https://github.com/{{ REPOSITORY }}/blob/master/CHANGELOG.md).

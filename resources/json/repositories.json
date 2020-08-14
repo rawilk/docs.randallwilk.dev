@@ -16,5 +16,14 @@
             "master": "v1"
         },
         "category": "Laravel"
+    },
+    {
+        "name": "laravel-settings",
+        "description": "Store Laravel application settings in the database.",
+        "repository": "rawilk/laravel-settings",
+        "branches": {
+            "master": "v1"
+        },
+        "category": "Laravel"
     }
 ]

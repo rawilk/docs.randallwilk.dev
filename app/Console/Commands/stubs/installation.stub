@@ -1,0 +1,8 @@
+---
+title: Installation
+sort: 3
+---
+
+{{ NAME }} can be installed via composer:
+
+<x-code lang="bash">composer require {{ REPOSITORY }}</x-code>
