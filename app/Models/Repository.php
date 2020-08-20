@@ -24,7 +24,7 @@ class Repository extends Model
     protected $guarded = [];
 
     /** @var string */
-    protected const CONTENT_META_PATTERN = '/---(.|\n)*---(.|\n)/';
+    protected const CONTENT_META_PATTERN = '/---(.|\n)*---/';
 
     public function hasVersion(string $version): bool
     {
@@ -141,7 +141,7 @@ class Repository extends Model
         if (Str::startsWith($content, '---')) {
             $meta = $this->extractMeta($content);
 
-            $content = preg_replace(static::CONTENT_META_PATTERN, '', $content);
+            $content = Str::after($content, "\n\n");
         }
 
         return [
@@ -152,6 +152,8 @@ class Repository extends Model
 
     protected function extractMeta(string $content): array
     {
+        $content = Str::before($content, "\n\n");
+
         preg_match(static::CONTENT_META_PATTERN, $content, $meta);
 
         return collect(explode(PHP_EOL, $meta[0]))

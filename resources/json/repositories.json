@@ -25,5 +25,14 @@
             "master": "v1"
         },
         "category": "Laravel"
+    },
+    {
+        "name": "laravel-breadcrumbs",
+        "description": "Easily add breadcrumbs to a Laravel app.",
+        "repository": "rawilk/laravel-breadcrumbs",
+        "branches": {
+            "master": "v1"
+        },
+        "category": "Laravel"
     }
 ]

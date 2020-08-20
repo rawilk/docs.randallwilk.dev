@@ -140,6 +140,11 @@ table {
     }
 }
 
+blockquote {
+    @apply border-l-4 border-gray-500 pl-4;
+    @apply text-gray-600;
+}
+
 .nav-menu + .content {
     @apply pl-6;
 }
