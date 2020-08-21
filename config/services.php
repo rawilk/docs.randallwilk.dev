@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'algolia' => [
+        'key' => env('ALGOLIA_API_KEY'),
+        'index' => env('ALGOLIA_INDEX_NAME'),
+    ],
+
 ];

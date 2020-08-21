@@ -3,6 +3,8 @@
         <div class="flex flex-col md:flex-row">
             @if (isset($nav))
                 <nav class="nav-menu hidden md:block">
+                    @include('partials.algolia', ['elementId' => 'algolia-search'])
+
                     <x-menu :items="$nav" />
                 </nav>
             @endif

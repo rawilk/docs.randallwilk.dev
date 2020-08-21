@@ -168,4 +168,13 @@ blockquote {
         content: '#';
     }
 }
+
+.algolia-autocomplete {
+    width: 100%;
+}
+
+.header .ds-dropdown-menu {
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
 /* purgecss end ignore */

@@ -100,6 +100,7 @@
                         <div>
                             @if (isset($nav))
                                 <hr>
+                                @include('partials.algolia', ['elementId' => 'algolia-search-mobile'])
                                 <x-menu :items="$nav" />
                             @endif
                         </div>
