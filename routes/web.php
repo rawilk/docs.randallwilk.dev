@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('laravel-app-key-rotator', '/laravel-app-key-rotator/v1/introduction');
 Route::redirect('laravel-printing', '/laravel-printing/v1/introduction');
 Route::redirect('laravel-settings', '/laravel-settings/v1/introduction');
+Route::redirect('laravel-breadcrumbs', '/laravel-breadcrumbs/v1/introduction');
 
 Route::get('{package}/{version}/{doc}', DocsController::class)
     ->where('doc', '.*')
