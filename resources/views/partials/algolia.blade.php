@@ -27,7 +27,7 @@
         debug: true,
         algoliaOptions: {
             hitsPerPage: 5,
-{{--            @verbatim facetFilters: ['project:{{ $package }}', 'version:{{ $version }}'] @endverbatim--}}
+            //facetFilters: ['project:{{ $repository->name }}', 'version:{{ $version }}']
         },
     });
 </script>
