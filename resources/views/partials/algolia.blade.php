@@ -24,10 +24,9 @@
         apiKey: '{{ config('services.algolia.key') }}',
         indexName: '{{ config('services.algolia.index') }}',
         inputSelector: '#{{ $elementId }}',
-        debug: true,
         algoliaOptions: {
             hitsPerPage: 5,
-            //facetFilters: ['project:{{ $repository->name }}', 'version:{{ $version }}']
+            facetFilters: ['project:{{ $repository->name }}', 'version:{{ $version }}']
         },
     });
 </script>
